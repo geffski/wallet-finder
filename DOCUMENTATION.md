@@ -76,8 +76,8 @@ Automatically discovers and analyzes high-performing Solana wallets by tracking 
 ```
 wallet-finder/
 ├── main.py                 # Pipeline orchestrator
-├── top-trader.py           # Discovery engine (GMGN API)
-├── wallet-stats.py         # Audit engine (Cielo API)
+├── top_trader.py           # Discovery engine (GMGN API)
+├── wallet_stats.py         # Audit engine (Cielo API)
 ├── generate_report.py      # HTML report generator
 ├── db_manager.py           # Database abstraction layer
 ├── base_api_client.py      # Shared HTTP client (proxy + retry)
@@ -91,11 +91,11 @@ wallet-finder/
 ### **Data Flow**
 
 ```
-1. Discovery (top-trader.py)
+1. Discovery (top_trader.py)
    ↓
    Trending Tokens → Top Traders → Database (discovery_hits)
    
-2. Audit (wallet-stats.py)
+2. Audit (wallet_stats.py)
    ↓
    Pending Wallets → Cielo API → Database (cielo_stats, wallet_portfolio)
    
@@ -227,7 +227,7 @@ python main.py --skip-discovery
 #### **Discovery**
 ```bash
 # Find wallets from trending tokens
-python top-trader.py
+python top_trader.py
 ```
 
 **What it does:**
@@ -239,13 +239,13 @@ python top-trader.py
 #### **Audit**
 ```bash
 # Audit all pending wallets
-python wallet-stats.py --all
+python wallet_stats.py --all
 
 # Retry failed wallets
-python wallet-stats.py --retry
+python wallet_stats.py --retry
 
 # Audit specific wallet
-python wallet-stats.py --wallet <address>
+python wallet_stats.py --wallet <address>
 ```
 
 **What it does:**
@@ -502,10 +502,10 @@ class MyAPIClient(BaseAPIClient):
 
 ```bash
 # Test discovery
-python top-trader.py
+python top_trader.py
 
 # Test audit (single wallet)
-python wallet-stats.py --wallet <address>
+python wallet_stats.py --wallet <address>
 
 # Test report
 python generate_report.py --type SESSION
@@ -521,8 +521,8 @@ python main.py --all
 ```
 wallet-finder/
 ├── main.py                    # Pipeline orchestrator
-├── top-trader.py              # Discovery engine
-├── wallet-stats.py            # Audit engine
+├── top_trader.py              # Discovery engine
+├── wallet_stats.py            # Audit engine
 ├── generate_report.py         # Report generator
 ├── manage_queue.py            # Queue synchronization
 │
