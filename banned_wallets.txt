@@ -1,0 +1,11 @@
+# BANNED WALLETS LIST
+# These wallets are permanently ignored by the bot.
+# They will not be audited, stored, or reported.
+# Add one address per line.
+# Purpose is not wasting time on wallets you already tracking
+5fkAwNVpT8A1UHEnY62VEFpqgagdoP8FYrv5ideiQp5c
+Gdaqp3ND6r3HVAWXpawkQU18EuQqwNxpaeeio8ASVAYd
+AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf
+7SeUfPLcRxthg4EsPa31X56yugTfLSaYED6UZNJeKyqe
+5h7yzwmrGoG2BmxNCqNR2EnSv1LWCFo7n6SKSh5ZWkfE
+

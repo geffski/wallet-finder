@@ -1,0 +1,73 @@
+# Environment & Secrets
+.env
+.env.local
+
+# Database Files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Generated Reports
+*.html
+elite_wallets*.html
+wallet-stats*.html
+
+# Log Files
+logs/
+*.log
+update.log
+
+# Failed Wallet Exports
+failed_wallets*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# API Response Cache (optional - keep if you want to track these)
+api_responses/
+
+# Large token list (optional - exclude if too big)
+# manual_tokens.txt
